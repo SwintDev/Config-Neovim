@@ -32,6 +32,7 @@ return {
             "go",
             "python",
             "sql",
+            "xml",
           },
         auto_install = true,
         highlight = { enable = true },

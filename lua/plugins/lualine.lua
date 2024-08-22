@@ -52,7 +52,6 @@ return {
           },
         },
       },
-      extensions = { 'neo-tree', },
     })
   end
 }
