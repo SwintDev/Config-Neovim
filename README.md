@@ -8,7 +8,7 @@
 
 ### Introduction
 
-This repository contains my Neovim configuration files, based on Lua, and using `lazy.nvim` as a plugin manager. Each file in the `config` directory corresponds to the configuration of a plugin or set of functionalities in Neovim.
+This repository contains my Neovim configuration files, based on Lua, and using `lazy.nvim` as a plugin manager. Each file in the `plugins` directory corresponds to the configuration of a plugin or set of functionalities in Neovim.
 
 ## Screenshots
 
@@ -62,7 +62,7 @@ Ensure you have the following tools installed on your system:
 
 ### Introducion
 
-Este repositorio contiene la configuración de Neovim basada en Lua, utilizando `lazy.nvim` como gestor de plugins. Cada archivo en el directorio `config` corresponde a la configuración de un plugin o de un conjunto de funcionalidades en Neovim.
+Este repositorio contiene la configuración de Neovim basada en Lua, utilizando `lazy.nvim` como gestor de plugins. Cada archivo en el directorio `plugins` corresponde a la configuración de un plugin o de un conjunto de funcionalidades en Neovim.
 
 ## Algunas Imagenes
 
