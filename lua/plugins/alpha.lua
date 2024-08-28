@@ -1,50 +1,50 @@
 return {
-	"goolord/alpha-nvim",
-	dependencies = {
-		"nvim-tree/nvim-web-devicons",
-	},
+  "goolord/alpha-nvim",
+  dependencies = {
+    "nvim-tree/nvim-web-devicons",
+  },
 
-	config = function()
-		local alpha = require("alpha")
-		local dashboard = require("alpha.themes.dashboard")
+  config = function()
+    local alpha = require("alpha")
+    local dashboard = require("alpha.themes.dashboard")
 
-		dashboard.section.header.val = {
+    dashboard.section.header.val = {
 
-			[[    █████▒█    ██  ██▓     ██▓      ██████ ▄▄▄█████▓ ▄▄▄       ▄████▄   ██ ▄█▀ ]],
-			[[  ▓██    ▒██  ▓██▒▓██▒    ▓██▒    ▒██    ▒ ▓  ██▒ ▓▒▒████▄    ▒██▀ ▀█   ██▄█▒  ]],
-			[[  ▒████ ░▓██  ▒██░▒██░    ▒██░    ░ ▓██▄   ▒ ▓██░ ▒░▒██  ▀█▄  ▒▓█    ▄ ▓███▄░  ]],
-			[[  ░▓█▒  ░▓▓█  ░██░▒██░    ▒██░      ▒   ██▒░ ▓██▓ ░ ░██▄▄▄▄██ ▒▓▓▄ ▄██▒▓██ █▄  ]],
-			[[  ░▒█░   ▒▒█████▓ ░██████▒░██████▒▒██████▒▒  ▒██▒ ░  ▓█   ▓██▒▒ ▓███▀ ░▒██▒ █▄ ]],
-			[[   ▒ ░   ░▒▓▒ ▒ ▒ ░ ▒░▓  ░░ ▒░▓  ░▒ ▒▓▒ ▒ ░  ▒ ░░    ▒▒   ▓▒█░░ ░▒ ▒  ░▒ ▒▒ ▓▒ ]],
-			[[   ░     ░░▒░ ░ ░ ░ ░ ▒  ░░ ░ ▒  ░░ ░▒  ░ ░    ░      ▒   ▒▒ ░  ░  ▒   ░ ░▒ ▒░ ]],
-			[[   ░ ░    ░░░ ░ ░   ░ ░     ░ ░   ░  ░  ░    ░        ░   ▒   ░        ░ ░░ ░  ]],
-			[[          ░         ░  ░    ░  ░      ░                 ░  ░░ ░      ░  ░      ]],
-			[[                                                            ░                  ]],
-			[[    ▓█████▄ ▓█████ ██▒   █▓▓█████  ██▓     ▒█████   ██▓███  ▓█████  ██▀███     ]],
-			[[    ▒██▀ ██▌▓█   ▀▓██░   █▒▓█   ▀ ▓██▒    ▒██▒  ██▒▓██░  ██▒▓█   ▀ ▓██ ▒ ██▒   ]],
-			[[    ░██   █▌▒███   ▓██  █▒░▒███   ▒██░    ▒██░  ██▒▓██░ ██▓▒▒███   ▓██ ░▄█ ▒   ]],
-			[[    ░▓█▄   ▌▒▓█  ▄  ▒██ █░░▒▓█  ▄ ▒██░    ▒██   ██░▒██▄█▓▒ ▒▒▓█  ▄ ▒██▀▀█▄     ]],
-			[[    ░▒████▓ ░▒████▒   ▒█░  ░▒████▒░██████▒░ ████▓▒░▒██▒ ░  ░░▒████▒░██▓ ▒██▒   ]],
-			[[    ▒▒▓  ▒ ░░ ▒░ ░  ░ ▐░  ░░ ▒░ ░░ ▒░▓  ░░ ▒░▒░▒░ ▒▓▒░ ░  ░░░ ▒░ ░░ ▒▓ ░▒▓░    ]],
-			[[    ░ ▒  ▒  ░ ░  ░  ░ ░░   ░ ░  ░░ ░ ▒  ░  ░ ▒ ▒░ ░▒ ░      ░ ░  ░  ░▒ ░ ▒░    ]],
-			[[    ░ ░  ░    ░       ░░     ░     ░ ░   ░ ░ ░ ▒  ░░          ░     ░░   ░     ]],
-			[[      ░       ░  ░     ░     ░  ░    ░  ░    ░ ░              ░  ░   ░         ]],
-			[[    ░                 ░                                                        ]],
-			[[                                   SwintDev                                    ]],
-		}
+      [[    █████▒█    ██  ██▓     ██▓      ██████ ▄▄▄█████▓ ▄▄▄       ▄████▄   ██ ▄█▀ ]],
+      [[  ▓██    ▒██  ▓██▒▓██▒    ▓██▒    ▒██    ▒ ▓  ██▒ ▓▒▒████▄    ▒██▀ ▀█   ██▄█▒  ]],
+      [[  ▒████ ░▓██  ▒██░▒██░    ▒██░    ░ ▓██▄   ▒ ▓██░ ▒░▒██  ▀█▄  ▒▓█    ▄ ▓███▄░  ]],
+      [[  ░▓█▒  ░▓▓█  ░██░▒██░    ▒██░      ▒   ██▒░ ▓██▓ ░ ░██▄▄▄▄██ ▒▓▓▄ ▄██▒▓██ █▄  ]],
+      [[  ░▒█░   ▒▒█████▓ ░██████▒░██████▒▒██████▒▒  ▒██▒ ░  ▓█   ▓██▒▒ ▓███▀ ░▒██▒ █▄ ]],
+      [[   ▒ ░   ░▒▓▒ ▒ ▒ ░ ▒░▓  ░░ ▒░▓  ░▒ ▒▓▒ ▒ ░  ▒ ░░    ▒▒   ▓▒█░░ ░▒ ▒  ░▒ ▒▒ ▓▒ ]],
+      [[   ░     ░░▒░ ░ ░ ░ ░ ▒  ░░ ░ ▒  ░░ ░▒  ░ ░    ░      ▒   ▒▒ ░  ░  ▒   ░ ░▒ ▒░ ]],
+      [[   ░ ░    ░░░ ░ ░   ░ ░     ░ ░   ░  ░  ░    ░        ░   ▒   ░        ░ ░░ ░  ]],
+      [[          ░         ░  ░    ░  ░      ░                 ░  ░░ ░      ░  ░      ]],
+      [[                                                            ░                  ]],
+      [[    ▓█████▄ ▓█████ ██▒   █▓▓█████  ██▓     ▒█████   ██▓███  ▓█████  ██▀███     ]],
+      [[    ▒██▀ ██▌▓█   ▀▓██░   █▒▓█   ▀ ▓██▒    ▒██▒  ██▒▓██░  ██▒▓█   ▀ ▓██ ▒ ██▒   ]],
+      [[    ░██   █▌▒███   ▓██  █▒░▒███   ▒██░    ▒██░  ██▒▓██░ ██▓▒▒███   ▓██ ░▄█ ▒   ]],
+      [[    ░▓█▄   ▌▒▓█  ▄  ▒██ █░░▒▓█  ▄ ▒██░    ▒██   ██░▒██▄█▓▒ ▒▒▓█  ▄ ▒██▀▀█▄     ]],
+      [[    ░▒████▓ ░▒████▒   ▒█░  ░▒████▒░██████▒░ ████▓▒░▒██▒ ░  ░░▒████▒░██▓ ▒██▒   ]],
+      [[    ▒▒▓  ▒ ░░ ▒░ ░  ░ ▐░  ░░ ▒░ ░░ ▒░▓  ░░ ▒░▒░▒░ ▒▓▒░ ░  ░░░ ▒░ ░░ ▒▓ ░▒▓░    ]],
+      [[    ░ ▒  ▒  ░ ░  ░  ░ ░░   ░ ░  ░░ ░ ▒  ░  ░ ▒ ▒░ ░▒ ░      ░ ░  ░  ░▒ ░ ▒░    ]],
+      [[    ░ ░  ░    ░       ░░     ░     ░ ░   ░ ░ ░ ▒  ░░          ░     ░░   ░     ]],
+      [[      ░       ░  ░     ░     ░  ░    ░  ░    ░ ░              ░  ░   ░         ]],
+      [[    ░                 ░                                                        ]],
+      [[                                   SwintDev                                    ]],
+    }
 
-		dashboard.section.buttons.val = {
-			dashboard.button("N", "  New file", ":ene <BAR> startinsert<CR>"),
-			dashboard.button("F", "  Find file", ":Telescope find_files<CR>"),
-			dashboard.button("R", "  Recent files", ":Telescope oldfiles<CR>"),
-			dashboard.button("I", "  Resume", ":Alpha<CR>"),
-			dashboard.button("Q", "  Quit", ":qa<CR>"),
-		}
+    dashboard.section.buttons.val = {
+      dashboard.button("N", "  New file", ":ene <BAR> startinsert<CR>"),
+      dashboard.button("F", "  Find file", ":Telescope find_files<CR>"),
+      dashboard.button("R", "  Recent files", ":Telescope oldfiles<CR>"),
+      dashboard.button("I", "  Resume", ":Alpha<CR>"),
+      dashboard.button("Q", "  Quit", ":qa<CR>"),
+    }
 
-		for _, button in ipairs(dashboard.section.buttons.val) do
-			button.opts.hl = "AlphaButton"
-		end
+    for _, button in ipairs(dashboard.section.buttons.val) do
+      button.opts.hl = "AlphaButton"
+    end
 
-		alpha.setup(dashboard.opts)
-	end,
+    alpha.setup(dashboard.opts)
+  end,
 }
