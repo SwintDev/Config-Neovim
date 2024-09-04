@@ -87,7 +87,7 @@ return {
             'location',
             separator = { left = '', right = '' },
             padding = { left = 1, right = 1 },
-            color = { bg = colors.blue, fg = colors.crust },
+            color = mode_color_fn,
           },
         },
       },
