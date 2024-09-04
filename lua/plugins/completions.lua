@@ -11,7 +11,7 @@ return {
             "L3MON4D3/LuaSnip",
             "saadparwaiz1/cmp_luasnip",
             "onsails/lspkind.nvim",
-            "roobert/tailwindcss-colorizer-cmp.nvim", -- Asegúrate de que este plugin esté instalado
+            "roobert/tailwindcss-colorizer-cmp.nvim", 
         },
         config = function()
             local ls = require("luasnip")
@@ -27,7 +27,7 @@ return {
             cmp.setup({
                 snippet = {
                     expand = function(args)
-                        require("luasnip").lsp_expand(args.body) -- For `luasnip` users.
+                        require("luasnip").lsp_expand(args.body) 
                     end,
                 },
                 window = {

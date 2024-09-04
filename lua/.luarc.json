@@ -1,6 +1,7 @@
 {
     "diagnostics.globals": [
-        "vim"
+        "vim",
+        "get_split_count"
     ],
     "diagnostics.disable": [
         "unused-local"
