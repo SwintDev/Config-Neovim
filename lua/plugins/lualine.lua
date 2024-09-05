@@ -36,12 +36,7 @@ return {
             'branch',
             separator = { left = '', right = '' },
             color = { bg = colors.mauve, fg = colors.crust },
-          },
-          {
-            'diff',
-            separator = { left = '', right = '' },
-            color = { bg = colors.yellow, fg = colors.crust },
-          },
+            },
           {
             'diagnostics',
             separator = { left = '', right = '' },
@@ -62,6 +57,11 @@ return {
           },
         },
         lualine_x = {
+          {
+            'encoding',
+            separator = { left = '', right = '' },
+            color = { bg = colors.yellow, fg = colors.crust },
+          },
 
           {
             'fileformat',
