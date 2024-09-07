@@ -36,7 +36,7 @@ return {
             'branch',
             separator = { left = '', right = '' },
             color = { bg = colors.mauve, fg = colors.crust },
-            },
+          },
           {
             'diagnostics',
             separator = { left = '', right = '' },
@@ -58,17 +58,15 @@ return {
         },
         lualine_x = {
           {
-            'encoding',
-            separator = { left = '', right = '' },
-            color = { bg = colors.yellow, fg = colors.crust },
-          },
-
-          {
-            'fileformat',
+          'fileformat',
             separator = { left = '', right = '' },
             color = { bg = colors.mauve, fg = colors.crust },
           },
-
+          {
+            'encoding',
+            separator = { left = '', right = '' },
+            color = { bg = colors.surface0, fg = colors.yellow },
+          },
         },
         lualine_y = {
           {
@@ -79,7 +77,7 @@ return {
           {
             'progress',
             separator = { left = '', right = '' },
-            color = { bg = colors.surface0, fg = colors.sky },
+            color = { bg = colors.surface0, fg = colors.teal },
           },
         },
         lualine_z = {
