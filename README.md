@@ -1,4 +1,4 @@
-## Project: Ncatt
+# Project Ncatt
 
 # Neovim Configuration
 
@@ -58,10 +58,12 @@ Ensure you have the following tools installed on your system:
    git clone https://github.com/SwintDev/Config-Neovim.git ~/.config/nvim
    rm -rf ~/.config/nvim/img ~/.config/nvim/README.md
    ```
-
+---
+### License 
+File txt
 ---
 
-## Proyecto: Ncatt
+# Proyecto Ncatt
 
 # Configuración de Neovim
 
@@ -117,5 +119,7 @@ Asegúrate de tener las siguientes herramientas instaladas:
    git clone https://github.com/SwintDev/Config-Neovim.git ~/.config/nvim
    rm -rf ~/.config/nvim/img ~/.config/nvim/README.md
    ```
-
+---
+### Licencia
+Archivo txt
 ---
