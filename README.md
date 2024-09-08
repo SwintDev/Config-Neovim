@@ -1,3 +1,6 @@
+  <img src="/img/Ncatt.svg" alt="" border-radius="50%" height="300" width="300"/>
+
+
 # Project Ncatt
 
 # Neovim Configuration
