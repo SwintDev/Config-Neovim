@@ -60,12 +60,15 @@ Ensure you have the following tools installed on your system:
    ```
 ---
 ### License 
+
 File txt
+
+---
 ---
 
 # Proyecto Ncatt
 
-# Configuración de Neovim
+## Configuración de Neovim
 
 ## Español
 
@@ -121,5 +124,8 @@ Asegúrate de tener las siguientes herramientas instaladas:
    ```
 ---
 ### Licencia
+
 Archivo txt
+
+---
 ---
