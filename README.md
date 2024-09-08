@@ -13,12 +13,9 @@ This repository contains my Neovim configuration files, based on Lua, and using 
 ## Screenshots
 
 <p align="center">
-     <img src="/img/1.png" alt="" width="300"/>
-     <img src="/img/2.png" alt="" width="300"/>
-     <img src="/img/3.png" alt="" width="300"/>
-     <img src="/img/4.png" alt="" width="300"/>
-     <img src="/img/5.png" alt="" width="300"/>
-     <img src="/img/6.png" alt="" width="300"/>
+     <a target="blank"><img src="/img/alpha.png" alt="" width="300"/></a>
+     <img src="/img/vim.png" alt="" width="300"/>
+     <img src="/img/lualine.png" alt="" width="300"/>
 </p>
 
 ## File Structure
