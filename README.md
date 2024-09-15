@@ -1,6 +1,6 @@
-  <img src="/img/Ncatt.svg" alt="" border-radius="50%" height="300" width="300"/>
-
-
+<div style="text-align: center;">
+   <img src="/img/Ncatt.svg" alt="Ncatt Logo" style="border-radius: 50%; height: 300px; width: 300px;"/>
+</div>
 # Project Ncatt
 
 # Neovim Configuration
@@ -67,9 +67,9 @@ Ensure you have the following tools installed on your system:
 File txt
 
 ---
----
-<div align="center">
-   <img src="/img/Ncatt.svg" alt="" border-radius="50%" height="300" width="300"/>
+
+<div style="text-align: center;">
+   <img src="/img/Ncatt.svg" alt="Ncatt Logo" style="border-radius: 50%; height: 300px; width: 300px;"/>
 </div>
 
 # Proyecto Ncatt
@@ -133,5 +133,4 @@ Asegúrate de tener las siguientes herramientas instaladas:
 
 Archivo txt
 
----
 ---
