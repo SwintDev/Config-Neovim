@@ -1,5 +1,5 @@
 <div align="center">
-   <img src="/img/Ncatt.svg" alt="Ncatt Logo" style="border-radius: 50%; height: 300px; width: 300px;"/>
+   <img src="/img/Ncatt.svg" alt="Ncatt Logo" style="border-radius: 50%; height: 450px; width: 450px;"/>
 </div>
 # Project Ncatt
 
@@ -69,7 +69,7 @@ File txt
 ---
 
 <div align="center">
-   <img src="/img/Ncatt.svg" alt="Ncatt Logo" style="border-radius: 50%; height: 300px; width: 300px;"/>
+   <img src="/img/Ncatt.svg" alt="Ncatt Logo" style="border-radius: 50%; height: 450px; width: 450px;"/>
 </div>
 
 # Proyecto Ncatt
