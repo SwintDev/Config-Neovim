@@ -53,6 +53,14 @@ return {
         capabilities = capabilities
       })
 
+      vim.diagnostic.config({
+        virtual_text = true,
+        signs = true,
+        update_in_insert = true,
+        underline = true,
+        severity_sort = true,
+      })
+
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
       vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
