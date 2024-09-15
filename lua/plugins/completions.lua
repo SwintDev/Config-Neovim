@@ -1,4 +1,3 @@
-
 return {
   {
     "hrsh7th/nvim-cmp",
@@ -11,6 +10,7 @@ return {
       "L3MON4D3/LuaSnip",
       "saadparwaiz1/cmp_luasnip",
       "roobert/tailwindcss-colorizer-cmp.nvim",
+      "onsails/lspkind.nvim",
     },
     config = function()
       local ls = require("luasnip")
@@ -22,6 +22,8 @@ return {
       end, { silent = true })
 
       local cmp = require("cmp")
+      local lspkind = require("lspkind")
+
       cmp.setup({
         snippet = {
           expand = function(args)
@@ -58,7 +60,21 @@ return {
         end,
         formatting = {
           format = function(entry, vim_item)
+            vim_item = lspkind.cmp_format({
+              mode = "symbol_text",
+              maxwidth = 50,
+              ellipsis_char = "...",
+              menu = {
+                buffer = "[Buffer]",
+                nvim_lsp = "[LSP]",
+                nvim_lua = "[Lua]",
+                luasnip = "[LuaSnip]",
+                latex_symbols = "[Latex]",
+              },
+            })(entry, vim_item)
+
             vim_item = require("tailwindcss-colorizer-cmp").formatter(entry, vim_item)
+
             return vim_item
           end,
         },
