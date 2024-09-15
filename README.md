@@ -68,6 +68,9 @@ File txt
 
 ---
 ---
+<div text-align="center">
+   <img src="/img/Ncatt.svg" alt="" border-radius="50%" height="300" width="300"/>
+</div>
 
 # Proyecto Ncatt
 
