@@ -79,8 +79,8 @@ return {
       },
       commands = {},
       window = {
-        position = "left",
-        width = 40,
+        position = "right",
+        width = 36,
         mapping_options = { noremap = true, nowait = true },
         mappings = {
           ["<space>"] = { "toggle_node", nowait = false },
@@ -114,9 +114,9 @@ return {
       },
       filesystem = {
         filtered_items = {
-          visible = false,
+          visible = true,
           hide_dotfiles = true,
-          hide_gitignored = true,
+          hide_gitignored = false,
           hide_hidden = true,
           hide_by_name = {},
           hide_by_pattern = {},
@@ -125,10 +125,10 @@ return {
           never_show = {},
           never_show_by_pattern = {},
         },
-        follow_current_file = { enabled = false, leave_dirs_open = false },
+        follow_current_file = { enabled = true },
         group_empty_dirs = false,
         hijack_netrw_behavior = "open_default",
-        use_libuv_file_watcher = false,
+        use_libuv_file_watcher = true,
         window = {
           mappings = {
             ["<bs>"] = "navigate_up",
@@ -201,7 +201,10 @@ return {
       },
     })
 
-    vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>", { noremap = true, silent = true })
+    vim.cmd("highlight NeoTreeNormal guibg=#1E1E2E")
+    vim.cmd("highlight NeoTreeNormalNC guibg=#1E1E2E")
+
+    vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal right<CR>", { noremap = true, silent = true })
     vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", { noremap = true, silent = true })
   end,
 }

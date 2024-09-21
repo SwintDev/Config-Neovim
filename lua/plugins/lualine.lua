@@ -58,7 +58,7 @@ return {
         },
         lualine_x = {
           {
-          'fileformat',
+            'fileformat',
             separator = { left = '', right = '' },
             color = { bg = colors.mauve, fg = colors.crust },
           },
