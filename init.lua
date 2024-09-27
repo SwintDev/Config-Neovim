@@ -25,3 +25,4 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 		vim.cmd('echom "File saved successfully!"')
 	end,
 })
+

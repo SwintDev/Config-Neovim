@@ -22,7 +22,7 @@ return {
         right_trunc_marker = '',
         max_name_length = 18,
         max_prefix_length = 15,
-        tab_size = 18,
+        tab_size = 21,
         diagnostics = "nvim_lsp",
         diagnostics_indicator = function(count, level, diagnostics_dict, context)
           local icon = level:match("error") and " " or " "
@@ -39,7 +39,7 @@ return {
         },
         show_buffer_icons = true,
         show_buffer_close_icons = true,
-        show_close_icon = false,
+        show_close_icon = true,
         show_tab_indicators = true,
         enforce_regular_tabs = false,
         always_show_bufferline = true,
@@ -49,6 +49,10 @@ return {
     }
 
     vim.cmd("highlight BufferLineFill guibg=#1E1E2E")
+    vim.cmd("highlight BufferLineIndicatorSelected guifg=" .. require("catppuccin.palettes").get_palette("mocha").mauve)
+    local palette = require("catppuccin.palettes").get_palette("mocha")
+    vim.cmd("highlight BufferLineModified guifg=" .. palette.text)
+    vim.cmd("highlight BufferLineModifiedVisible guifg=" .. palette.text)
+    vim.cmd("highlight BufferLineModifiedSelected guifg=" .. palette.text)
   end
 }
-
