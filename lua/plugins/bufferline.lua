@@ -24,7 +24,7 @@ return {
         max_prefix_length = 15,
         tab_size = 21,
         diagnostics = "nvim_lsp",
-        diagnostics_indicator = function(count, level, diagnostics_dict, context)
+        diagnostics_indicator = function(count, level)
           local icon = level:match("error") and " " or " "
           return " " .. icon .. count
         end,
@@ -48,11 +48,14 @@ return {
       },
     }
 
-    vim.cmd("highlight BufferLineFill guibg=#1E1E2E")
-    vim.cmd("highlight BufferLineIndicatorSelected guifg=" .. require("catppuccin.palettes").get_palette("mocha").mauve)
     local palette = require("catppuccin.palettes").get_palette("mocha")
+    vim.cmd("highlight BufferLineFill guibg=#1E1E2E")
+    vim.cmd("highlight BufferLineIndicatorSelected guifg=" .. palette.mauve)
     vim.cmd("highlight BufferLineModified guifg=" .. palette.text)
     vim.cmd("highlight BufferLineModifiedVisible guifg=" .. palette.text)
     vim.cmd("highlight BufferLineModifiedSelected guifg=" .. palette.text)
+
+    vim.api.nvim_set_keymap('n', '<leader>bp', ':BufferLineCyclePrev<CR>', { noremap = true, silent = true })
+    vim.api.nvim_set_keymap('n', '<leader>bn', ':BufferLineCycleNext<CR>', { noremap = true, silent = true })
   end
 }

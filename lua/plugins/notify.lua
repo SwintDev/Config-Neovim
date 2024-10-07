@@ -2,6 +2,7 @@ return {
   'rcarriga/nvim-notify',
   config = function()
     local notify = require('notify')
+
     vim.keymap.set("n", "<leader>m", ":Notifications<CR>", { noremap = true, silent = true })
 
     notify.setup({
@@ -9,8 +10,8 @@ return {
       timeout = 3000,
       background_colour = "#1e1e2f",
       minimum_width = 50,
-      maximum_width = 80,
-      max_height = nil,
+      max_width = function() return math.floor(vim.o.columns * 0.4) end,
+      max_height = function() return math.floor(vim.o.lines * 0.2) end,
       top_down = true,
       render = "default",
       on_open = function(win)
@@ -20,20 +21,20 @@ return {
     })
 
     local colors = require('catppuccin.palettes').get_palette()
-    vim.cmd(string.format([[highlight NotifyERRORBorder guifg=%s guibg=%s]], colors.red, colors.base))
-    vim.cmd(string.format([[highlight NotifyWARNBorder guifg=%s guibg=%s]], colors.yellow, colors.base))
-    vim.cmd(string.format([[highlight NotifyINFOBorder guifg=%s guibg=%s]], colors.green, colors.base))
-    vim.cmd(string.format([[highlight NotifyDEBUGBorder guifg=%s guibg=%s]], colors.teal, colors.base))
+    vim.api.nvim_set_hl(0, "NotifyERRORBorder", { fg = colors.red, bg = colors.base })
+    vim.api.nvim_set_hl(0, "NotifyWARNBorder", { fg = colors.yellow, bg = colors.base })
+    vim.api.nvim_set_hl(0, "NotifyINFOBorder", { fg = colors.green, bg = colors.base })
+    vim.api.nvim_set_hl(0, "NotifyDEBUGBorder", { fg = colors.teal, bg = colors.base })
 
-    vim.cmd(string.format([[highlight NotifyERRORTitle guifg=%s]], colors.red))
-    vim.cmd(string.format([[highlight NotifyWARNTitle guifg=%s]], colors.yellow))
-    vim.cmd(string.format([[highlight NotifyINFOTitle guifg=%s]], colors.green))
-    vim.cmd(string.format([[highlight NotifyDEBUGTitle guifg=%s]], colors.teal))
+    vim.api.nvim_set_hl(0, "NotifyERRORTitle", { fg = colors.red })
+    vim.api.nvim_set_hl(0, "NotifyWARNTitle", { fg = colors.yellow })
+    vim.api.nvim_set_hl(0, "NotifyINFOTitle", { fg = colors.green })
+    vim.api.nvim_set_hl(0, "NotifyDEBUGTitle", { fg = colors.teal })
 
-    vim.cmd(string.format([[highlight NotifyERRORBody guifg=%s]], colors.text))
-    vim.cmd(string.format([[highlight NotifyWARNBody guifg=%s]], colors.text))
-    vim.cmd(string.format([[highlight NotifyINFOBody guifg=%s]], colors.text))
-    vim.cmd(string.format([[highlight NotifyDEBUGBody guifg=%s]], colors.text))
+    vim.api.nvim_set_hl(0, "NotifyERRORBody", { fg = colors.text })
+    vim.api.nvim_set_hl(0, "NotifyWARNBody", { fg = colors.text })
+    vim.api.nvim_set_hl(0, "NotifyINFOBody", { fg = colors.text })
+    vim.api.nvim_set_hl(0, "NotifyDEBUGBody", { fg = colors.text })
 
     vim.lsp.handlers["window/showMessage"] = function(_, method, params, _)
       local severity = ({
